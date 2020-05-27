@@ -1,5 +1,10 @@
 {
   "orgName": "Scratch 5090",
   "edition": "Developer",
+  "settings": {
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    }
+  },
   "features": []
 }

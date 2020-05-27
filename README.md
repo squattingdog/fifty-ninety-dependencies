@@ -6,13 +6,20 @@ This section will go through the steps needed to deploy and configure the depend
 
 ### Crete the Scratch Org
 using the salesforce cli, execute the following command:
-`sfdx force:source:create -a my-fn-org -d 30 -f [your/path/to/config/file]`
+```console
+sfdx force:org:create --loglevel debug --json -s -d 30 -a my-fn-org -f [your/path/to/config/file]
+```
 
 ### Deploy the Packages
 using the salesforce cli, execute the following command:
-`sfdx force:source:push -u my-fn-org`
+```console
+sfdx force:source:push -u my-fn-org
+```
 
 ### Assign Permission Sets to the user
 using the salesforce cli, execute the following commands:
-`sfdx force:user:permset:assign -n Agile_Accelerator_Admin -u my-fn-org`
-`sfdx force:user:permset:assign -n Agile_Accelerator_User -u my-fn-org`
+```console
+sfdx force:user:permset:assign -n Agile_Accelerator_Admin -u my-fn-org
+
+sfdx force:user:permset:assign -n Agile_Accelerator_User -u my-fn-org
+```
