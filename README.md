@@ -17,6 +17,8 @@ sfdx force:source:push -u my-fn-org
 ```
 
 ### Assign Permission Sets to the user
+This step is necessary only if you have created additional users in your org.  The Admin permission set is assigned during install to the user that was used to install the package.
+
 using the salesforce cli, execute the following commands:
 ```console
 sfdx force:user:permset:assign -n Agile_Accelerator_Admin -u my-fn-org
