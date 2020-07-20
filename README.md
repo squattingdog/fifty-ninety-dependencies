@@ -17,7 +17,7 @@ sfdx force:source:push -u my-fn-org
 ```
 
 ### Assign Permission Sets to the user
-This adming permissiong set assignment is necessary only if you have created additional users in your org; the admin permission set is assigned during install to the user that was used to install the package.
+Assigning the admin permissiong set is only necessary if there have been additional users created in your org; the admin permission set is automatically assigned to the user that was initiated the package installation.
 
 using the salesforce cli, execute the following commands:
 ```console
