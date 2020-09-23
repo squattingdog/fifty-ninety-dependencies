@@ -4,7 +4,7 @@ This repo is used to deploy the dependent packages separate from the code that d
 ## Installing the Dependencies
 This section will go through the steps needed to deploy and configure the dependencies.  This document uses the Salesforce CLI, but most of the steps could be done within VS Code using the Salesforce CLI.  See the Salesforce documentation on setting up and using VS Code. [Package Development Model with VS Code](https://forcedotcom.github.io/salesforcedx-vscode/articles/user-guide/package-development-model). For details about the model, see the [Package Development Model](https://trailhead.salesforce.com/en/content/learn/modules/sfdx_dev_model) Trailhead module.
 
-### Crete the Scratch Org
+### Create the Scratch Org
 using the salesforce cli, execute the following command:
 ```console
 sfdx force:org:create --loglevel debug --json -s -d 30 -a my-fn-org -f [your/path/to/config/file]
